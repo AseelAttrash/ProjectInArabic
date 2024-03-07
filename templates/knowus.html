@@ -1,0 +1,217 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+تعرفو علينا
+{% endblock %}
+
+{% block content %}
+<style>
+      body {
+        font-family: Arial, sans-serif;
+    }
+    
+    #div3 {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #title3 {
+        text-align: center;
+        color: #4a4a4a;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .group {
+        width: 100%;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        display: flex;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    /* p {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.5;
+        left: 35%;
+    } */
+
+    /* img {
+        width: 130px;
+        height: 150px;
+        margin-right: 0px;
+        border-radius: 50%;
+        object-fit: cover;
+
+        
+    } */
+
+    .rounded-image {
+    width: 130px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+    .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    padding: 0 10px;
+}
+
+.column.text {
+    width: 50%;
+}
+
+.column.image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+<div id="div3">
+    <h3 id="title3">تعرفو علينا</h3>
+
+    <h2>المسؤولون والمبادرون في المشروع</h2>
+    <div class="group">
+        <div class="row">
+            <div class="column image">
+                <img src="static/alan.jpg" alt="" class="rounded-image"> 
+            </div>
+            <div class="column text">
+                <h4>البروفيسور آلان هارتمان</h4>
+            <P>بروفيسور في جامعة حيفا ويتميز ب 31 عامًا من العمل البحثي في ​​شركة IBM وخمس سنوات كمحاضر جامعي. تمتد خبرته إلى مجالات تقنية متعددة، مع خبرة دولية، بما في ذلك دراسات ما بعد الدكتوراه في التوافقيات والتحسين. خلفيته الأكاديمية هي في الرياضيات البحتة، مع العديد من المنشورات و17 براءة اختراع، مما يجعله ضمن أفضل 2% من الباحثين في مجاله. البروفيسور ألان هو المشرف الحالي على المشروع في الجامعة.
+            </P>
+            </div>
+        </div>
+    </div>
+
+    <div class="group">
+        <div class="row">
+            <div class="column image">
+                <img src="static/peleg.png" alt="" class="rounded-image"> 
+            </div>
+            <div class="column text">
+                <h4>البروفيسورة مور بيليج</h4>
+                <p>البروفيسورة مور بيليج هي محاضرة في جامعة حيفا، وتعمل على تطوير أساليب مبتكرة لتطوير أنظمة دعم القرار الطبي الحيوي. مع خلفية في علم الأحياء والبيلوجيا وأنظمة المعلومات من التخنيون ودرجة ما بعد الدكتوراه في جامعة ستانفورد، فهي معروفة بمساهمتها في مجال المبادئ التوجيهية السريرية المحوسبة (CMR) . لقد قادت مشروع MobiGuide الأوروبي الذي يدعم اتخاذ القرار للمرضى الرائدين المزودين بأجهزة استشعار وأطبائهم، في أي مكان وزمان. وقد تم الاعتراف بها من قبل العديد من الجوائز المرموقة، ويركز عملها على تخصيص التدخلات الصحية باستخدام التعلم الآلي. لديها أكثر من 200 منشور وتأثير أكاديمي عالي. كانت البروفيسور بيليج هي المشرف على المشروع في أول عامين له، حيث شاركوا في إنشاء استبيان قياسي لجمع الأعراض وإدارة المرض من المرضى الإناث وتحليل النص باستخدام أساليب التعلم الآلي لتحديد الموضوعات المتكررة في تقارير العديد من النساء المرضى.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="group">
+        <div class="row">
+            <div class="column image">
+                <img src="static/pic1.png" alt="" class="rounded-image"> 
+            </div>
+            <div class="column text">
+                <h4>عنات هورويتز</h4>
+                <p>منسقة المشروع، امرأة لامرأة. عنات لديها أم مريضة بمرض منيير، ولم يكن لها الحق في الحصول على حقوق لتفهم سبب مرضها، وهي ترافق والدتها منذ 30 عامًا، وتحاول عنات الترويج للقضية من خلال العمل التطوعي. وهي إحدى المؤسسين والشركاء في مبادرة النوع الاجتماعي "نساء سليمات ويعشن بكرامة" والتي تهدف إلى تعزيز الحقوق الطبية والاجتماعية للنساء المصابات بالأمراض الشفافة وعائلتهن.</p>            </div>
+        </div>
+    </div>
+
+        <div class="group">
+            <div class="row">
+                <div class="column image">
+                    <img src="static/tsivia.jpeg" alt="" class="rounded-image">
+                </div>
+                <div class="column text">
+                    <h4>زفيا دعي</h4>
+                    <p>ناشطة اجتماعية من قيادة مشروع "نساء سليمات ويعشن بكرامة"، أسست المجموعة الجنوبية للمشروع التي تعمل بإعادة تأهيل مرضى الفيبروميالجيا. تدير تسفيا العديد من الصفحات والمجموعات الخاصة بالفيبروميالجيا على الفيسبوك للدعم والتوعية. بالإضافة إلى ذلك فإن تسفيا تعاني من متلازمة التعب المزمن والفيبروميالجيا منذ المدرسة الثانوية ومن هنا لديها المعرفة والخبرة في المرض والتعامل مع كلا المرضين.</p>                </div>
+            </div>
+        </div>
+        
+        <div class="group">
+            <div class="row">
+                <div class="column image">
+                    <img src="static/pic1.png" alt="" class="rounded-image">
+                </div>
+                <div class="column text">
+                    <h4>د. عوفر ماركمان</h4>
+                    <p>رجل أعمال يتمتع بخبرة تزيد عن 20 عامًا في إدارة المشاريع والتعاون في المجالات الطبية والاقتصادية والاجتماعية. يتخصص الدكتور ماركمان في التعاون الدولي وتطوير المشاريع مع مجموعة متنوعة من الأطراف، بما في ذلك الحكومات والمنظمات غير الحكومية والشركات والأبحاث التطبيقية، وكجزء من أنشطته في مشروع "نساء سليمات ويعشن بكرامة" الدكتور ماركمان يعزز البحث والتعاون بين المؤسسات الطبية والمنظمات الاجتماعية في إسرائيل والعالم.</p>                </div>
+            </div>
+            </div>
+
+    
+            
+            <h2>الطلاب المبرمجون والباحثون</h2>
+
+            <h3>فريق البروفيسورة بيليج</h3>    <div class="group">
+        <div class="row">
+            <div class="column image">
+                <img src="static/valeria.png" alt="" class="rounded-image">
+            </div>
+            <div class="column text">
+                <h4>فاليريا كارهماليوف</h4>
+                <p>طالبة متخرجة من دراسات نظم المعلومات في مسار التطوير في جامعة حيفا</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="group">
+        <div class="row">
+            <div class="column image">
+                <img src="static/alon.png" alt="" class="rounded-image">
+            </div>
+            <div class="column text">
+                <h4>ألون بن أرتزي</h4>
+                <p>طالب متخرج من جامعة حيفا قسم نظم المعلومات - المسار العام</p>
+            </div>
+        </div>
+    </div>
+
+    <h3>فريق البروفيسور ألان</h3>
+    <div class="group">
+        <div class="row">
+            <div class="column image">
+                <img src="static/hanna.jpeg" alt="" class="rounded-image">
+            </div>
+            <div class="column text">
+                <h4>حنا بواردي</h4>
+                <p>طالب متفوق في الفصل الأخير في جامعة حيفا في قسم نظم المعلومات في مسار الذكاء الاصطناعي ومهتم باكمال دراساته العليا في مجال معالجة اللغات الطبيعية</p>            </div>
+        </div>
+    </div>
+
+
+    <div class="group">
+        <div class="row">
+            <div class="column image">
+                <img src="static/aseel.jpeg" alt="" class="rounded-image">
+            </div>
+            <div class="column text">
+                <h4>اسيل اطرش</h4>
+                <p>طالبة في فصلها الأخير في جامعة حيفا في قسم نظم المعلومات في مسار الذكاء الاصطناعي ومهتمة باكمال دراساتها العليا بتطوير واجهات الإنسان الحاسوبية.</p>            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+        
+
